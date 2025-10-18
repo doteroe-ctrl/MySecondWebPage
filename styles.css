@@ -15,51 +15,72 @@ body {
     font-family: 'Workbench', sans-serif;
 }
 
+/* -------------------------- */
+/* LATERALES */
+/* -------------------------- */
+.contenedor2,
+.contenedor3 {
+  position: absolute;
+  top: 120px; /* 🔹 alinea con el inicio del contenido central */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* IZQUIERDA */
+.contenedor2 {
+  left: 20px; /* margen izquierdo */
+}
+
+/* DERECHA */
+.contenedor3 {
+  right: 20px; /* margen derecho */
+}
+
 /* este contenedor los organiza en fila y les da espacio */
 .contenedor0 {
   display: flex;
-  justify-content: space-between; /* separa los contenedores */
-  align-items: flex-start; /* alinea arriba */
-  gap: 1px; /* espacio entre los contenedores */
-  margin: 2px;
   flex-wrap: wrap;
+  justify-content: center; /* separa los contenedores */
+  align-items:  flex-start; /* alinea arriba */
+  align-content: flex-start;
+  gap: 20px; /* espacio entre los contenedores */
+  margin: 40px 80px 40px 80px; /* margen alrededor del contenedor */
   flex: 1;
 }
 
-.contenedor{
-    width: 10px;
+/*medio*/
+.contenedor, .contenedor_forma2, .contenedor_forma3 {
+    width: 300px;
     background-color: #0ce7f261;
-    margin: 20px;
     border: 5px inset rgb(0, 255, 247);
     border-radius: 15px;
     padding: 5px 30px 30px 30px;
     color: #ffffff;
     flex-wrap: wrap;
-    width: 350px;
     
 }
 
-.contenedor2{
-  display: flex;
-  flex-direction: column;
-  background-color: #0ce7f200;
-  margin: 3px;
-  padding: 20px;
-  gap: 20px;
-  color: #ffffff;
+.contenedor_forma2{
+    width: 500px;
+    background-color: #f20cdf61;
+    border: 5px inset rgb(255, 0, 225);
+    
 }
 
-.contenedor3 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #0ce7f200;
-  margin: 3px;
-  padding: 20px;
-  gap: 20px;
-  color: #ffffff;
+.contenedor_forma3{
+    width: 200px;
+    background-color: #0cf22f61;
+    border: 5px inset rgb(0, 255, 38);
+    
 }
 
+
+
+/*estilo de las secciones de arriba*/
 .sec {
     display: flex;
     align-items: center;
